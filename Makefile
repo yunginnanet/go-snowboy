@@ -11,8 +11,10 @@ cmd:
 api:
 	CXX=${CXX} CC=${CC} go build -o ${BUILD_DIR}/snowboy-api example/api.go
 
-test:
+snowboy:
 	git clone --recurse-submodules https://github.com/seasalt-ai/snowboy
+
+test: snowboy
 	cp -r snowboy/resources/* ${BUILD_DIR}
 	CXX=${CXX} CC=${CC} go test -cover -race
 
