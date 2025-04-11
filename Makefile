@@ -12,7 +12,8 @@ api:
 	CXX=${CXX} CC=${CC} go build -o ${BUILD_DIR}/snowboy-api example/api.go
 
 test:
-	cp -r $$GOPATH/src/github.com/Kitt-AI/snowboy/resources/* ${BUILD_DIR}
+	git clone --recurse-submodules https://github.com/seasalt-ai/snowboy
+	cp -r snowboy/resources/* ${BUILD_DIR}
 	CXX=${CXX} CC=${CC} go test -cover -race
 
 clean:

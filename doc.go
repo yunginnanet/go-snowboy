@@ -1,5 +1,5 @@
 /*
-Package go-snowboy provides a Go-style wrapper for the swig-generate Go code from Kitt-AI/snowboy
+Package go-snowboy provides a Go-style wrapper for the swig-generate Go code from seasalt-ai/snowboy
 
 Simple audio hotword detection:
 
@@ -16,7 +16,7 @@ Simple audio hotword detection:
 	// ...
 	log.Fatal(det.ReadAndDetect(data))
 
-The Go bindings for snowboy audio detection (https://github.com/Kitt-AI/snowboy) are
+The Go bindings for snowboy audio detection (https://github.com/seasalt-ai/snowboy) are
 generated using swig which creates a lot of extra types and uses calls with variable arguments.
 This makes writing integrations in golang difficult because the types aren't explicit. go-snowboy
 is intended to be a wrapper around the swig-generated Go code which will provide Go-style usage.

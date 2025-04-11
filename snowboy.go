@@ -8,7 +8,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/Kitt-AI/snowboy/swig/Go"
+	"github.com/seasalt-ai/snowboy/swig/Go"
 )
 
 type snowboyResult int

@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/brentnd/go-snowboy.svg?style=svg)](https://circleci.com/gh/brentnd/go-snowboy)
 
-The Go bindings for snowboy audio detection (https://github.com/Kitt-AI/snowboy) are generated using swig which
+The Go bindings for snowboy audio detection (https://github.com/seasalt-ai/snowboy) are generated using swig which
  creates a lot of extra types and uses calls with variable arguments. This makes writing integrations in golang difficult
  because the types aren't explicit. go-snowboy is intended to be a wrapper around the swig-generated Go code which will
  provide Go-style usage.
@@ -14,7 +14,7 @@ See https://godoc.org/github.com/brentnd/go-snowboy
 * SWIG (v 3.0.12 recommended)
 
 ### Go Packages
-* github.com/Kitt-AI/snowboy/swig/Go
+* github.com/seasalt-ai/snowboy/swig/Go
 
 ## Example
 
